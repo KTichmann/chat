@@ -3,6 +3,7 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 const jwt = require('jsonwebtoken');
 const PORT = process.env.PORT || 3000;
+
 const { SECRET } = process.env
 
 io.on('connection', function(socket){
@@ -21,5 +22,5 @@ io.on('connection', function(socket){
 })
 
 http.listen(PORT, function(){
-    console.log('listening on *:3000');
+    console.log(`running at port: ${PORT}`)
 })
