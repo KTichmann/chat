@@ -1,6 +1,3 @@
-//get username --> listen to io chat messages, push them to the ul
-//
-
 if(io && username){
     const socket = io();
 
@@ -15,7 +12,13 @@ if(io && username){
 
     socket.on('chat message', function(data){
         let li = document.createElement('li')
-        li.textContent = `${data.username}: ${data.message}`
+        let username = document.createElement('span');
+        username.textContent = `${data.username}: `
+        username.classList.add('username')
+        let message = document.createElement('span');
+        message.textContent = `${data.message}`
+        li.appendChild(username);
+        li.appendChild(message)
         document.querySelector('#chatApp ul').appendChild(li)
       });
 }

@@ -1,0 +1,40 @@
+input{
+    bottom: 0px;
+    position: fixed;
+    width: 70%;
+    left: 0px;
+    height: 1.5rem;
+}
+
+button{
+    position: fixed;
+    bottom: 0px;
+    height: 1.9rem;
+    right: 0px;
+    width: 30%;
+    border: none;
+    border-radius: 1px;
+    background-color: rgb(17, 58, 241);
+    color: white;
+}
+
+#chatApp ul{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1rem;
+    font-family: Ubuntu, sans-serif;
+    padding-left: 0rem;
+}
+
+#chatApp li:nth-child(even){
+    background-color: rgba(100, 100, 250, .13);
+}
+
+#chatApp li{
+    padding: .5rem 0rem;
+}
+
+.username{
+    color: rgba(0,0,0,.6);
+    font-weight: 600;
+}

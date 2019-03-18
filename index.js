@@ -4,8 +4,6 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 const jwt = require('jsonwebtoken');
 const bodyParser = require('body-parser');
-const ejs = require('ejs');
-const fs = require('fs');
 
 const PORT = process.env.PORT || 3000;
 
